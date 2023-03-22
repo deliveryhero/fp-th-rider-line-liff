@@ -44,7 +44,7 @@
     <form method="POST"
       action="https://script.google.com/macros/s/AKfycbwSbsWi-ypIq81cQQnHTt7T9zcth4qbiaMglkaed5ksQLcY5zm2Clmq4yqTEymvHcSIKg/exec"
       class="needs-validation" novalidate>
-      <label for="VendorCode" class="form-label">สถานะของคุณ /
+      <label for="is_current_foodpanda_rider" class="form-label">สถานะของคุณ /
         status? (select only one option)</label>
       <div class="ml-3">
         <div class="form-check">
@@ -54,14 +54,14 @@
         </div>
         <div class="form-check mb-3">
           <input type="radio" class="form-check-input" id="validationFormCheck6" value="no"
-            name="is_current_foodpanda_rider" name="radio-stacked2" required>
+            name="is_current_foodpanda_rider" required>
           <label class="form-check-label" for="validationFormCheck6">สนใจเป็นไรเดอร์ foodpanda</label>
           <div class="invalid-feedback">โปรดเลือก 1 ตัวเลือก</div>
         </div>
       </div>
 
       <div class="mb-3">
-        <label for="VendorMobile" class="form-label">เบอร์มือถือ/rider id</label>
+        <label for="rider_id" class="form-label">เบอร์มือถือ/rider id</label>
         <input type="text" class="form-control" name="rider_id" pattern="\d*" minlength="5"
           maxlength="5">
         <div class="invalid-feedback">
@@ -73,7 +73,7 @@
       </div>
 
       <div class="mb-3">
-        <label for="VendorMobile" class="form-label">รหัสบัตรประชาชน 13 หลัก</label>
+        <label for="thai_national_id" class="form-label">รหัสบัตรประชาชน 13 หลัก</label>
         <input type="text" class="form-control" name="thai_national_id" pattern="\d*" minlength="13"
           maxlength="13" required>
         <div class="invalid-feedback">
