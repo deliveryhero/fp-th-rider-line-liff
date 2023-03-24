@@ -7,80 +7,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-  <title>Foodpanda Riders</title>
-
-
+  <title>foodpanda Riders - Thailand</title>
+  <link rel="icon" href="https://micro-assets.foodora.com/favicons/fp/favicon-16x16.png" sizes="16x16">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <!-- <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
-  </script> -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-  </script>
-  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  </script>
-  <!-- <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js">
-  </script> -->
+  <!-- <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+
+  <style>
+    .container-fluid {
+      padding:15px;
+    }
+
+    body {
+      font-family: 'Noto Sans Thai', sans-serif;
+    }
+  </style>
 </head>
 
-<body style="background-color:#F7C6CC;">
-  <div class="container-fluid" style="background-color: #FF2B85;">
+<body style="background-color:#F7F7F7;">
+  <div class="container-fluid" style="background-color: #F7F7F7;">
     <center>
-
-      <img src="banner_new.png" alt="centered image" width="250" height="50" class="center">
-
+      <img src="foodpanda_logo_banner.svg" alt="centered image" width="250" height="49" class="center">
     </center>
   </div>
   </br>
-
 
   <div class="ml-3 mr-3">
     <form method="POST"
       action="https://script.google.com/macros/s/AKfycbxDSZAqGwvZl5FjA7lW3Yy8xZ9cKlmS2xAy10ZLrh4JpYj6fs62c9Zj3JPaI5x79yUI5Q/exec"
       class="needs-validation" novalidate>
-      <label for="is_current_foodpanda_rider" class="form-label">สถานะของคุณ /
-        status? (select only one option)</label>
+      <label for="is_current_foodpanda_rider" class="form-label">สถานะของคุณ<span style="color: #E21B70">*</span></label>
       <div class="ml-3">
         <div class="form-check">
-          <input type="radio" class="form-check-input" id="validationFormCheck5" value="yes"
-            name="is_current_foodpanda_rider" required>
-          <label class="form-check-label" for="validationFormCheck5">เป็นไรเดอร์ foodpanda</label>
+          <input type="radio" class="form-check-input" id="validationFormCheck5" value="yes" name="is_current_foodpanda_rider" required>
+          <label class="form-check-label" for="validationFormCheck5">ปัจจุบันเป็นไรเดอร์ฟู้ดแพนด้า</label>
         </div>
         <div class="form-check mb-3">
-          <input type="radio" class="form-check-input" id="validationFormCheck6" value="no"
-            name="is_current_foodpanda_rider" required>
-          <label class="form-check-label" for="validationFormCheck6">สนใจเป็นไรเดอร์ foodpanda</label>
+          <input type="radio" class="form-check-input" id="validationFormCheck6" value="no" name="is_current_foodpanda_rider" required>
+          <label class="form-check-label" for="validationFormCheck6">สนใจเป็นไรเดอร์ฟู้ดแพนด้า</label>
           <div class="invalid-feedback">โปรดเลือก 1 ตัวเลือก</div>
         </div>
       </div>
 
       <div class="mb-3">
-        <label for="rider_id" class="form-label">เบอร์มือถือ/rider id</label>
-        <input type="text" class="form-control" name="rider_id" pattern="\d*" minlength="5"
-          maxlength="5">
+        <label for="rider_id" class="form-label">รหัสไรเดอร์ (หากปัจจุบันเป็นไรเดอร์ฟู้ดแพนด้า)</label>
+        <input type="text" class="form-control" name="rider_id" pattern="\d*" minlength="5" maxlength="7">
         <div class="invalid-feedback">
-          กรุณากรอกเบอร์มือถือตัวเลข 10 หลัก
+          กรุณากรอกรหัสไรเดอร์
         </div>
         <small class="form-text text-muted">
-          เบอร์มือถือ 10 หลัก ตัวอย่างเช่น 0123456789
+          รหัสไรเดอร์ 5 ถึง 7 หลัก ตัวอย่างเช่น 1234567
         </small>
       </div>
 
       <div class="mb-3">
-        <label for="thai_national_id" class="form-label">รหัสบัตรประชาชน 13 หลัก</label>
-        <input type="text" class="form-control" name="thai_national_id" pattern="\d*" minlength="13"
-          maxlength="13" required>
+        <label for="thai_national_id" class="form-label">รหัสบัตรประชาชน 13 หลัก<span style="color: #E21B70">*</span></label>
+        <input type="text" class="form-control" name="thai_national_id" pattern="\d*" minlength="13" maxlength="13" required>
         <div class="invalid-feedback">
-          กรุณากรอกเบอร์มือถือตัวเลข 10 หลัก
+          กรุณากรอกรหัสบัตรประชาชน 13 หลัก
         </div>
         <small class="form-text text-muted">
-          เบอร์มือถือ 10 หลัก ตัวอย่างเช่น 0123456789
+          รหัสบัตรประชาชน 13 หลัก ตัวอย่างเช่น 1234567890123
         </small>
       </div>
 
@@ -96,7 +93,6 @@
           });
         });
       </script>
-
 
       <div class="mb-3">
         <input type="text" class="visually-hidden" id="LineUserID" name="LineUserID" onchange="XX()">
@@ -115,7 +111,7 @@
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="yes" id="Agreed" name="Agreed" required>
           <label class="form-check-label" for="invalidCheck">
-            ข้าพเจ้าได้อ่านและยอมรับ <a href="terms.html" class="link-primary">ข้อกำหนดและเงื่อนไข</a>ในการยืนยันตัวตน
+            ข้าพเจ้าได้อ่านและยอมรับ<a href="terms-and-conditions.html" class="link-primary">ข้อกำหนดและเงื่อนไข</a>ในการยืนยันตัวตน
           </label>
           <div class="invalid-feedback">
             กรุณายอมรับเงื่อนไขและข้อตกลง
@@ -140,7 +136,7 @@
     });
   </script>
 
-  <!-- Whiel testing disable following script -->
+  <!-- While testing disable following script -->
   <script src="https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script>
   <script>
     function runApp() {
@@ -182,7 +178,4 @@
   </script>
 
 </body>
-
-
-
 </html>
