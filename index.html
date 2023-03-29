@@ -60,13 +60,13 @@
       </div>
 
       <div class="mb-3">
-        <label for="rider_id" class="form-label">รหัสไรเดอร์ (หากปัจจุบันเป็นไรเดอร์ฟู้ดแพนด้า)</label>
+        <label for="rider_id" class="form-label">รหัสไรเดอร์ / Rider ID (กรอกเฉพาะไรเดอร์ปัจจุบัน ห้ามใส่ข้อมูลหากสนใจสมัคร)</label>
         <input type="text" class="form-control" name="rider_id" pattern="\d*" minlength="5" maxlength="7">
         <div class="invalid-feedback">
           กรุณากรอกรหัสไรเดอร์
         </div>
         <small class="form-text text-muted">
-          รหัสไรเดอร์ 5 ถึง 7 หลัก ตัวอย่างเช่น 1234567
+          รหัสไรเดอร์ซึ่งสามารถตรวจสอบได้จากแอปฯวิ่งงาน
         </small>
       </div>
 
@@ -78,6 +78,17 @@
         </div>
         <small class="form-text text-muted">
           รหัสบัตรประชาชน 13 หลัก ตัวอย่างเช่น 1234567890123
+        </small>
+      </div>
+
+      <div class="mb-3">
+        <label for="mobile_number" class="form-label">เบอร์โทรศัพท์<span style="color: #E21B70">*</span></label>
+        <input type="text" class="form-control" name="mobile_number" pattern="\d*" minlength="10" maxlength="10" required>
+        <div class="invalid-feedback">
+          กรุณากรอกเบอร์โทรศัพท์
+        </div>
+        <small class="form-text text-muted">
+          เบอร์โทรศัพท์ 10 หลัก กรอกโดยไม่มีการเว้นวรรค ตัวอย่างเช่น 0123456789
         </small>
       </div>
 
