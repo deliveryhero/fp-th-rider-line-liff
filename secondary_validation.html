@@ -55,9 +55,6 @@
         <input type="text" class="visually-hidden" id="LineDisplayName" name="LineDisplayName" onchange="XX()">
       </div>
       <div class="mb-3">
-        <input type="text" class="visually-hidden" id="statusMessage" name="statusMessage" onchange="XX()">
-      </div>
-      <div class="mb-3">
         <input type="text" class="visually-hidden" id="Email" name="Email" onchange="XX()">
       </div>
 
@@ -94,7 +91,7 @@
       if (liff.isLoggedIn()) {
         runApp()
       } else {
-        liff.login();
+        liff.login({ redirectUri: "https://deliveryhero.github.io/fp-th-rider-line-liff/secondary_validation" });
       }
     }, err => console.error(err.code, error.message));
   </script>
